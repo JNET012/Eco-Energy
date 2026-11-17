@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eco Energy Plumbing &amp; Renewables | Plumbing, Heating &amp; Heat Pumps in the South West</title>
+<meta name="description" content="Gas Safe registered plumbing and heating engineers based in Bleadon, North Somerset. Boiler installs and servicing, bathrooms, air source heat pumps, landlord gas safety certificates and emergency call-outs.">
+<meta property="og:title" content="Eco Energy Plumbing &amp; Renewables">
+<meta property="og:description" content="Boilers, bathrooms and heat pumps across the South West. Call 07875 638200.">
+<meta property="og:image" content="images/team.jpg">
+<meta name="theme-color" content="#0b0d0d">
+<link rel="icon" type="image/png" href="images/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0b0d0d;
+    --ink: #1a1d1c;
+    --muted: #4a524f;
+    --paper: #f5f4f0;
+    --line: #d6d3ca;
+    --teal: #3fd9c4;
+    --teal-dark: #0f6e63;
+    --head: Archivo, "Arial Narrow", Arial, sans-serif;
+    --body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+    color-scheme: light;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; font-family: var(--body); font-size: 18px; line-height: 1.6; color: var(--ink); background: var(--paper); }
+  img { max-width: 100%; display: block; }
+  a { color: var(--teal-dark); }
+  a:hover { color: #0a4f47; }
+  :focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+  h1, h2, h3 { font-family: var(--head); margin: 0; }
+  h2 { font-weight: 800; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.1; letter-spacing: -0.015em; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+  .section { padding-top: 96px; padding-bottom: 96px; }
+  .dark { background: var(--black); color: #e9ecea; }
+  .dark a { color: var(--teal); }
+  .dark a:hover { color: #8ff0e2; }
+  .btn { display: inline-block; font-family: var(--head); font-weight: 700; font-size: 16px; text-decoration: none; padding: 16px 26px; border-radius: 4px; border: 1px solid transparent; cursor: pointer; }
+  .btn-teal { background: var(--teal); color: #04201c !important; }
+  .btn-teal:hover { background: #6ae5d4; }
+  .btn-outline { color: #fff !important; border-color: #4a5452; }
+  .btn-outline:hover { border-color: var(--teal); }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 12px; top: 12px; z-index: 20; background: #fff; color: var(--ink); padding: 10px 14px; }
+
+  /* Top strip */
+  .strip { background: #000; color: #b9c2bf; font-size: 14px; border-bottom: 1px solid #1d2322; }
+  .strip .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding-top: 10px; padding-bottom: 10px; }
+  .strip a { font-weight: 600; text-decoration: none; }
+
+  /* Header */
+  header { background: var(--black); position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #1d2322; }
+  header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 32px; padding-top: 14px; padding-bottom: 14px; }
+  .logo img { height: 54px; width: auto; }
+  nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-family: var(--head); font-weight: 600; font-size: 15px; }
+  nav a { color: #e9ecea; text-decoration: none; }
+  nav a:hover { color: var(--teal); }
+  nav .btn { padding: 12px 18px; font-size: 15px; }
+  @media (max-width: 720px) {
+    .logo img { height: 42px; }
+    nav .text-link { display: none; }
+  }
+
+  /* Hero */
+  .hero .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 56px; padding-top: 72px; padding-bottom: 88px; }
+  .hero-text { flex: 1 1 460px; min-width: 0; }
+  .hero-kicker { margin: 0 0 18px; font-family: var(--head); font-weight: 600; font-size: 17px; color: var(--teal); }
+  .hero h1 { font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; color: #fff; margin-bottom: 24px; }
+  .hero-lead { margin: 0 0 32px; font-size: 20px; color: #c3cbc8; max-width: 540px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .facts { display: flex; flex-wrap: wrap; gap: 20px 40px; margin-top: 48px; padding-top: 28px; border-top: 1px solid #262d2b; }
+  .facts strong { display: block; font-family: var(--head); font-weight: 800; font-size: 30px; color: #fff; line-height: 1.2; }
+  .facts span { font-size: 15px; color: #9aa5a1; }
+  .hero-photo { flex: 1 1 420px; min-width: 0; }
+  .hero-photo img { width: 100%; height: 520px; object-fit: cover; object-position: 55% 50%; border-radius: 6px; }
+  @media (max-width: 720px) { .hero-photo img { height: 340px; } .hero .wrap { padding-top: 48px; padding-bottom: 64px; } }
+
+  /* Services */
+  .services-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 48px; margin-bottom: 48px; }
+  .services-head p { margin: 0; max-width: 460px; color: var(--muted); }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); column-gap: 40px; border-top: 2px solid var(--ink); margin: 0; padding: 0; list-style: none; }
+  .services li { padding: 26px 0; border-bottom: 1px solid var(--line); }
+  .services h3 { font-size: 21px; margin-bottom: 6px; }
+  .services p { margin: 0; color: var(--muted); }
+
+  /* Work */
+  .work { background: #fff; }
+  .work-intro { margin: 12px 0 40px; max-width: 560px; color: var(--muted); }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+  .gallery figure { margin: 0; }
+  .gallery img { width: 100%; height: 420px; object-fit: cover; border-radius: 4px; }
+  .gallery figcaption { margin-top: 10px; font-size: 15px; color: var(--muted); }
+
+  /* Review */
+  .review .wrap { max-width: 900px; }
+  .review svg { display: block; margin-bottom: 24px; }
+  .review blockquote { margin: 0; font-family: var(--head); font-weight: 500; font-size: clamp(22px, 2.4vw, 30px); line-height: 1.4; color: #fff; }
+  .review p { margin: 28px 0 0; color: #9aa5a1; font-size: 16px; }
+
+  /* About */
+  .about .wrap { display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start; }
+  .about-photo { flex: 1 1 480px; min-width: 0; }
+  .about-photo img { width: 100%; height: 460px; object-fit: cover; border-radius: 6px; }
+  .about-photo p { margin: 12px 0 0; font-size: 15px; color: var(--muted); }
+  .about-text { flex: 1 1 440px; min-width: 0; }
+  .about-text h2 { margin-bottom: 24px; }
+  .about-text p { margin: 0 0 18px; }
+  .accred { width: 240px; height: auto; border-radius: 4px; margin-top: 32px; }
+  @media (max-width: 720px) { .about-photo img { height: 300px; } }
+
+  /* Contact */
+  .contact { background: #fff; border-top: 1px solid #e3e0d8; }
+  .contact .wrap { display: flex; flex-wrap: wrap; gap: 56px; }
+  .contact-info { flex: 1 1 360px; min-width: 0; }
+  .contact-info > p { margin: 16px 0 36px; color: var(--muted); }
+  .contact-list { display: flex; flex-direction: column; gap: 22px; margin: 0; }
+  .contact-list dt { font-size: 15px; font-weight: 700; color: var(--muted); }
+  .contact-list dd { margin: 0; font-size: 20px; overflow-wrap: anywhere; }
+  .contact-list .big { font-family: var(--head); font-weight: 700; font-size: 26px; text-decoration: none; }
+  form { flex: 1 1 460px; min-width: 0; background: var(--paper); padding: 32px; border-radius: 6px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  @media (max-width: 560px) { form { grid-template-columns: 1fr; padding: 22px; } }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field.full { grid-column: 1 / -1; }
+  label { font-size: 15px; font-weight: 600; }
+  input, select, textarea { font: inherit; font-size: 16px; padding: 12px; border: 1px solid #b9b5aa; border-radius: 4px; background: #fff; color: var(--ink); min-width: 0; width: 100%; }
+  textarea { resize: vertical; }
+  .btn-dark { background: var(--black); color: #fff; border: 0; }
+  .btn-dark:hover { background: #26302e; }
+  .form-note { grid-column: 1 / -1; margin: 0; font-size: 15px; color: var(--muted); }
+  .form-error { grid-column: 1 / -1; margin: 0; font-size: 15px; color: #a3261b; font-weight: 600; }
+
+  /* Footer */
+  footer { background: #000; color: #9aa5a1; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px 40px; padding-top: 40px; padding-bottom: 40px; }
+  footer img { height: 44px; width: auto; }
+  footer .links { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+  footer a { text-decoration: none; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="strip dark">
+  <div class="wrap">
+    <span>Gas Safe registered and OFTEC, covering the South West from Bleadon</span>
+    <span>Emergency call-outs: <a href="tel:07875638200">07875 638200</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Eco Energy Plumbing &amp; Renewables, back to top">
+      <img src="images/logo.png" alt="Eco Energy Plumbing &amp; Renewables" width="480" height="193">
+    </a>
+    <nav aria-label="Main">
+      <a class="text-link" href="#services">Services</a>
+      <a class="text-link" href="#work">Our work</a>
+      <a class="text-link" href="#about">About us</a>
+      <a class="text-link" href="#contact">Contact</a>
+      <a class="btn btn-teal" href="tel:07875638200">Call 07875 638200</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="top" class="hero dark">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="hero-kicker">Plumbing, gas and oil engineers</p>
+      <h1>Boilers, bathrooms and heat pumps, fitted properly.</h1>
+      <p class="hero-lead">We’re a small, local team led by Andy Moig, a Gas Safe registered engineer with 16 years on the tools. From a dripping tap to a full air source heat pump install, you’ll deal with the people who actually do the work.</p>
+      <div class="hero-actions">
+        <a class="btn btn-teal" href="#contact">Get a free quote</a>
+        <a class="btn btn-outline" href="tel:07875638200">Call 07875 638200</a>
+      </div>
+      <div class="facts">
+        <div><strong>16 years</strong><span>hands-on experience</span></div>
+        <div><strong>NVQ Level 3</strong><span>plumbing and heating</span></div>
+        <div><strong>94%</strong><span>recommend us on Facebook</span></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/andy.jpg" alt="Andy Moig standing in front of the Eco Energy vans" width="1400" height="1050">
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="services-head">
+      <h2>What we do</h2>
+      <p>Routine work or an urgent repair, gas, oil or renewable, we’ll give you straight advice on what will work in your home and what won’t.</p>
+    </div>
+    <ul class="services">
+      <li><h3>Air source heat pumps</h3><p>Design and installation of air source heat pump systems for lower running costs and lower emissions.</p></li>
+      <li><h3>Boiler installation</h3><p>New and replacement gas and oil boilers, sized and set up for your home.</p></li>
+      <li><h3>Bathroom installation</h3><p>Complete bathrooms and shower rooms: plumbing, fitting and finishing, start to end.</p></li>
+      <li><h3>Servicing and inspections</h3><p>Annual gas and oil boiler services to keep things safe, efficient and within warranty.</p></li>
+      <li><h3>Landlord gas safety certificates</h3><p>CP12 checks for rental properties, with the paperwork sorted for you.</p></li>
+      <li><h3>General plumbing and heating</h3><p>Leaks, radiators, cylinders, taps and pipework. The everyday jobs, done right.</p></li>
+      <li><h3>Emergency call-outs</h3><p>No heating, no hot water, or water where it shouldn’t be? Call us on <a href="tel:07875638200">07875 638200</a>.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="work" class="section work">
+  <div class="wrap">
+    <h2>Recent bathrooms</h2>
+    <p class="work-intro">A few of the bathrooms and shower rooms we’ve fitted for customers locally. There’s more on our <a href="https://www.instagram.com/ecoenergyplumbingandrenewables" rel="noopener">Instagram</a> and <a href="https://www.facebook.com/profile.php?id=61557150766518" rel="noopener">Facebook</a>.</p>
+    <div class="gallery">
+      <figure>
+        <img src="images/white-bath.jpg" alt="Bathroom with marble-effect tiles, walk-in shower, double basin and herringbone floor" loading="lazy" width="1050" height="1400">
+        <figcaption>Walk-in shower, double vanity and herringbone floor</figcaption>
+      </figure>
+      <figure>
+        <img src="images/white-shower.jpg" alt="Ceiling-mounted rain shower with separate handset over marble-effect tiles" loading="lazy" width="1050" height="1400">
+        <figcaption>Ceiling rain head with riser handset</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gold-bath.jpg" alt="Shower room with brushed brass towel rail and tap, and wood-effect vanity" loading="lazy" width="660" height="825">
+        <figcaption>Brushed brass fittings and onyx-effect tile</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gold-shower.jpg" alt="Glass walk-in shower with brass rain head and lit recessed niche" loading="lazy" width="660" height="880">
+        <figcaption>Walk-in shower with lit niche</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section review dark" aria-label="Customer review">
+  <div class="wrap">
+    <svg aria-hidden="true" width="48" height="36" viewBox="0 0 48 36"><path d="M0 36V20C0 8 6 1 18 0v7c-6 1-9 5-9 11h9v18H0zm30 0V20C30 8 36 1 48 0v7c-6 1-9 5-9 11h9v18H30z" fill="#3fd9c4"/></svg>
+    <blockquote>Amazing work from these guys, quick and efficient, nothing was too much trouble and we appreciated the recommendations on what would work and what wouldn’t. We had a brand new bathroom and a boiler service and I couldn’t be happier with how it all looks and works. 100% would recommend!</blockquote>
+    <p>Bathroom and boiler service customer. <span style="color:#e9ecea">94% recommend us from 13 reviews on <a href="https://www.facebook.com/profile.php?id=61557150766518" rel="noopener">Facebook</a>.</span></p>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="wrap">
+    <div class="about-photo">
+      <img src="images/team.jpg" alt="Sam, Andy and Lucas standing in front of the Eco Energy vans" loading="lazy" width="1400" height="1050">
+      <p>The team on site</p>
+    </div>
+    <div class="about-text">
+      <h2>A local family business</h2>
+      <p>Eco Energy was set up by Andy Moig, a plumbing and heating engineer who has spent 16 years in the trade. He’s Gas Safe registered, holds an NVQ Level 3 in plumbing and heating, and is dad to six-year-old Mila.</p>
+      <p>Andy’s fiancée Holly runs things behind the scenes, handling bookings, paperwork and keeping the diary in order, so Andy can stay focused on the work itself.</p>
+      <p>On site, Andy is joined by Sam and Lucas. Between the three of them we cover everything from boiler services to full bathroom refits and heat pump installs across the South West, and we take the same care over a small repair as a big job.</p>
+      <img class="accred" src="images/accred.jpg" alt="Gas Safe Register and OFTEC logos" loading="lazy" width="1000" height="470">
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="wrap">
+    <div class="contact-info">
+      <h2>Get in touch</h2>
+      <p>For quotes, servicing or an emergency, give us a call. If we’re on a job, leave a message or send the form and we’ll get back to you.</p>
+      <dl class="contact-list">
+        <div><dt>Phone</dt><dd><a class="big" href="tel:07875638200">07875 638200</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@ecoenergy-ltd.co.uk">info@ecoenergy-ltd.co.uk</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/ecoenergyplumbingandrenewables" rel="noopener">@ecoenergyplumbingandrenewables</a></dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/profile.php?id=61557150766518" rel="noopener">Eco Energy Plumbing &amp; Renewables</a></dd></div>
+        <div><dt>Based in</dt><dd>Bleadon, North Somerset, covering the South West</dd></div>
+      </dl>
+    </div>
+
+    <form id="enquiry" novalidate>
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="f-post">Postcode</label><input id="f-post" name="postcode" type="text" autocomplete="postal-code"></div>
+      <div class="field full"><label for="f-job">What do you need?</label>
+        <select id="f-job" name="job">
+          <option>Boiler installation</option>
+          <option>Boiler service</option>
+          <option>Bathroom installation</option>
+          <option>Air source heat pump</option>
+          <option>Landlord gas safety certificate</option>
+          <option>General plumbing or heating</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field full"><label for="f-msg">Tell us a bit about the job</label><textarea id="f-msg" name="message" rows="5"></textarea></div>
+      <p class="form-error" id="form-error" role="alert" hidden>Please add your name and a phone number so we can call you back.</p>
+      <div class="field full"><button class="btn btn-dark" type="submit">Email your enquiry</button></div>
+      <p class="form-note">This opens your email app with your details filled in, ready to send to us.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="images/logo.png" alt="Eco Energy Plumbing &amp; Renewables" width="480" height="193">
+    <div class="links dark" style="background:none">
+      <a href="tel:07875638200">07875 638200</a>
+      <a href="mailto:info@ecoenergy-ltd.co.uk">info@ecoenergy-ltd.co.uk</a>
+      <a href="https://www.facebook.com/profile.php?id=61557150766518" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/ecoenergyplumbingandrenewables" rel="noopener">Instagram</a>
+      <span>Gas Safe registered and OFTEC</span>
+    </div>
+    <span>© <span id="year">2026</span> Eco Energy Plumbing &amp; Renewables</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.getElementById('enquiry').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var name = f.name.value.trim();
+    var phone = f.phone.value.trim();
+    var err = document.getElementById('form-error');
+    if (!name || !phone) { err.hidden = false; (name ? f.phone : f.name).focus(); return; }
+    err.hidden = true;
+    var body =
+      'Name: ' + name + '\n' +
+      'Phone: ' + phone + '\n' +
+      'Email: ' + f.email.value.trim() + '\n' +
+      'Postcode: ' + f.postcode.value.trim() + '\n' +
+      'Job: ' + f.job.value + '\n\n' +
+      f.message.value.trim();
+    var subject = 'Enquiry: ' + f.job.value + ' (' + name + ')';
+    window.location.href = 'mailto:info@ecoenergy-ltd.co.uk?subject=' +
+      encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
